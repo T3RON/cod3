@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "irsans";
+    src: url(../fonts/irsans.ttf) format("truetype");
+    src: url(../fonts/irsans.eot);
+    src: url(../fonts/irsans.eot?#iefix) format("embedded-opentype"), url(../fonts/irsans.woff) format("woff"), url(../fonts/irsans.svg#BYekan) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "IRANSansWeb";
+    src: url(../fonts/IRANSansWeb.ttf) format("truetype");
+    src: url(../fonts/IRANSansWeb.eot);
+    src: url(../fonts/IRANSansWeb.eot?#iefix) format("embedded-opentype"), url(../fonts/IRANSansWeb.woff) format("woff"), url(../fonts/IRANSansWeb.svg#BYekan) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'IRANSansWeb', 'Courier New', Courier, monospace;
+}
+
+.brand-font {
+    font-family: 'IRANSansWeb', 'Courier New', Courier, monospace !important;
+}
+
+body {
+    background-color: #E4E6EF !important;
+    direction: rtl;
+}
+
+.header {
+    background: #3F4254;
+    height: 150px;
+}
+
+.menu {
+    background: #fff;
+    height: 50px;
+}
+
+.bg-color-white {
+    background-color: #fff !important;
+}
+
+.bg-color-black {
+    background-color: #000 !important;
+}
+
+.br {
+    border-radius: 5px;
+}
+
+.c-product__title {
+    margin: .8rem 0;
+    font-weight: 700;
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+}
+
+.c-product__mini-seller-price-real,
+.c-product__seller-price-real {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: left;
+    margin: 0;
+    text-align: center;
+}
+
+.c-product__mini-seller-price-pure,
+.c-product__seller-price-pure {
+    display: inline;
+    font-size: 31px;
+    font-size: 1.214rem;
+    line-height: 1.419;
+}
+
+.c-product__headline--gallery {
+    font-size: 16px;
+    font-size: 1.143rem;
+    line-height: 43px;
+    border-bottom: 1px solid #2c13b9;
+    color: #2c13b9;
+    padding: 6px 13px;
+}
+
+.card-border {
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+}
+
+.c-swiper-specials__btn {
+    padding: 9px 16px;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.571;
+    font-weight: 700;
+    border: 1px solid rgb(24, 24, 24);
+    color: rgb(41, 38, 38);
+}
