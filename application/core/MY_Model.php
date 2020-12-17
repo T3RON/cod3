@@ -404,9 +404,8 @@ class MY_Model extends CI_Model {
     
     }
 
-    function update ($table,$id,$data) {
-    
-        $this->db->where($table.'_id', $id);
+    function update ($table,$where,$where_val,$data) {
+        $this->db->where($where, $where_val);
         return $this->db->update($table, $data);
     }
 

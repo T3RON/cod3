@@ -18,7 +18,7 @@ class Index extends CI_Controller {
     function index()
     {
 
-        $output['dd'] = $this->MY_Model->select('products');
+        $output['products'] = $this->MY_Model->select('products');
 
 
         $this->load->view('index',$output);

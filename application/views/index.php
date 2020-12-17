@@ -37,19 +37,23 @@
 
                 <div class="col-12">
                     <div class="main-carousel px-1" data-flickity='{ "lazyLoad": 2, "initialIndex": 2 }'>
-                        <?php foreach($dd as $dd_value) { ?>
+                        <?php foreach($products as $products_value) { ?>
                         <a
-                            href="<?= 'https://affstat.adro.co/click/a135cd72-06eb-4008-8903-9afa1da33e12/'.base64_encode('https://www.digikala.com/product/'.$dd_value->products_code); ?>">
+                            href="<?= $products_value->products_url; ?>">
                             <div class="carousel-cell">
                                 <div class="card card-border" style="width: 18rem;">
                                     <img class="card-img-top carousel-cell-image"
-                                        data-flickity-lazyload="<?= Scraper_helper::Scraper_img_digikala($dd_value->products_code,'img[class=js-gallery-img]','data-zoom-image');?>" />
+                                        data-flickity-lazyload="<?= $products_value->products_img; ?>" />
                                     <div class="card-body">
                                         <h6 class="col-12 card-title">
-                                            <?= Scraper_helper::Scraper_digikala($dd_value->products_code,'h1[class=c-product__title]');?>
+                                            <?= $products_value->products_title;?>
                                         </h6>
-                                        <a href="#"
-                                            class="col-12 btn btn-primary"><?= Scraper_helper::Scraper_digikala($dd_value->products_code,'div[class=c-product__seller-price-real]');?>
+                                        <a id="price" href="#"
+                                            class="col-12 btn btn-primary">
+                                            
+                                            <?=
+                                            Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-real]')
+                                            ?>
                                         </a>
                                     </div>
                                 </div>
@@ -70,6 +74,10 @@
 
 </div>
 
+<script>
 
+
+
+</script>
 
 <?php include_once (APPPATH.'views/_layout/site_footer.php'); ?>

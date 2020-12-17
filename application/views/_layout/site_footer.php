@@ -30,6 +30,13 @@ jQuery(document).ready(function($) {
   contain: true
 });
 
+var $price_div = $('.js-price-value');
+var $price_empty = $('#price');
+
+var orginal_price = $.trim($mydiv.html());
+var empty_price = $.trim($mydiv.html());
+
+$(".js-price-value").html(orginal_price);
 });
 </script>
 
