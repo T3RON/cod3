@@ -31,6 +31,7 @@ class Digikala extends CI_Controller {
         $products_title = 'h1[class=c-product__title]';
         $products_content = 'ul[class=c-params__list]';
         $products_img = 'img[class=js-gallery-img]';
+        $products_cond = 'div[class=c-product__params js-is-expandable]';
 
 
 
@@ -51,6 +52,7 @@ class Digikala extends CI_Controller {
 		Scraper_helper::Scraper_site($dkp,$products_title,'products_title','products','products_code');
 		Scraper_helper::Scraper_site($dkp,$products_content,'products_content','products','products_code');
         Scraper_helper::Scraper_img_site($dkp,$products_img,'products_img','products','products_code');
+        Scraper_helper::Scraper_img_site($dkp,$products_cond,'products_cond','products','products_code');
         
 
         if ($result) {

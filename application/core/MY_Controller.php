@@ -15,7 +15,7 @@ class MY_Controller extends CI_Controller
         $this->load->library('Jdf');
         $this->load->library('user_agent');
         $this->load->library('session');
-        $this->load->helper('url');
+        $this->load->helper('uri');
         $this->load->helper('form');
 
 

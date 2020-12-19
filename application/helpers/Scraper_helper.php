@@ -9,12 +9,24 @@ class Scraper_helper {
 
 		$target_url = "https://www.digikala.com/product/".$dkp;
 		$html = new simple_html_dom();
-		$html->load_file($target_url);
-		foreach($html->find($selector) as $result)
-		{
-			echo $result->innertext;
+		$html->load_file($target_url);    
+		
+		$var = $html->find($selector,0);
+
+		if(isset($var)) {
+			foreach($html->find($selector) as $result)
+			{
+				
+
+				echo $result->innertext .  ' تومان';
+			
+			}
+		} else{
+			echo "ناموجود";
 		}
+	
 	}
+	// echo strlen(Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'));
 
 	public static function Scraper_site($dkp,$selector,$field,$table,$where)
 	{
