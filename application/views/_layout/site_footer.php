@@ -149,20 +149,14 @@
 </body>
 
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 $(document).ready(function() {
-
-    var variable = $('#price').html();
-    var wc =$("#price").val().length;
-  alert(wc);
-	variable.replace(/\s/g, '');
-	
-
-
+    alert("dsadasdasd");
+    $('.btn-link-spoiler').on('click', function() {
+        alert("dsadasdasd");
+    });​
 
 });
-
-
-</script> -->
+</script>
 
 </html>

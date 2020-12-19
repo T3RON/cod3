@@ -44,6 +44,24 @@ class Scraper_helper {
 			$CI->MY_Model->update($table,$where,$dkp,$data);
 	
 		}
+	}	
+	
+	public static function meta_site($dkp,$selector,$field,$table,$where)
+	{
+		$CI =& get_instance();
+		$target_url = "https://www.digikala.com/product/".$dkp;
+		$html = new simple_html_dom();
+		$html->load_file($target_url);
+		foreach($html->find($selector) as $result)
+		{
+			
+			$data = array(
+				$field => $result->getAttribute('content')
+			);
+	
+			$CI->MY_Model->update($table,$where,$dkp,$data);
+	
+		}
 	}
 
 	public static function Scraper_img_site($dkp,$selector,$field,$table,$where)

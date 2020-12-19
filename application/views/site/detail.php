@@ -274,99 +274,64 @@
             <div class='col-xs-12 col-sm-12 col-md-9 rht-col'>
                 <div class="detail-block">
                     <div class="row">
-
+                        <h1 style="display:none"><?= $products_value->meta_description; ?><h1>
                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 gallery-holder">
                             <div class="product-item-holder size-big single-product-gallery small-gallery">
 
                                 <div id="owl-single-product">
-                                    <div class="single-product-gallery-item" id="slide1">
+                                    <div class="single-product-gallery-item" id="slide0">
                                         <a data-lightbox="image-1" data-title="Gallery"
-                                            href="<?= base_url(); ?>dist/images/products/p1.jpg">
+                                            href="<?= $products_value->products_slide0; ?>">
                                             <img class="img-responsive" alt=""
                                                 src="<?= base_url(); ?>dist/images/blank.gif"
-                                                data-echo="<?= base_url(); ?>dist/images/products/p1.jpg" />
+                                                data-echo="<?= $products_value->products_slide0; ?>" />
+                                        </a>
+                                    </div>
+                                    <!-- /.single-product-gallery-item -->
+
+                                    <div class="single-product-gallery-item" id="slide1">
+                                        <a data-lightbox="image-1" data-title="Gallery"
+                                            href="<?= $products_value->products_slide1; ?>">
+                                            <img class="img-responsive" alt=""
+                                                src="<?= base_url(); ?>dist/images/blank.gif"
+                                                data-echo="<?= $products_value->products_slide1; ?>" />
                                         </a>
                                     </div>
                                     <!-- /.single-product-gallery-item -->
 
                                     <div class="single-product-gallery-item" id="slide2">
                                         <a data-lightbox="image-1" data-title="Gallery"
-                                            href="<?= base_url(); ?>dist/images/products/p2.jpg">
+                                            href="<?= $products_value->products_slide2; ?>">
                                             <img class="img-responsive" alt=""
                                                 src="<?= base_url(); ?>dist/images/blank.gif"
-                                                data-echo="<?= base_url(); ?>dist/images/products/p2.jpg" />
+                                                data-echo="<?= $products_value->products_slide2; ?>" />
                                         </a>
                                     </div>
                                     <!-- /.single-product-gallery-item -->
 
                                     <div class="single-product-gallery-item" id="slide3">
                                         <a data-lightbox="image-1" data-title="Gallery"
-                                            href="<?= base_url(); ?>dist/images/products/p3.jpg">
+                                            href="<?= $products_value->products_slide3; ?>">
                                             <img class="img-responsive" alt=""
                                                 src="<?= base_url(); ?>dist/images/blank.gif"
-                                                data-echo="<?= base_url(); ?>dist/images/products/p3.jpg" />
+                                                data-echo="<?= $products_value->products_slide3; ?>" />
                                         </a>
                                     </div>
                                     <!-- /.single-product-gallery-item -->
 
                                     <div class="single-product-gallery-item" id="slide4">
                                         <a data-lightbox="image-1" data-title="Gallery"
-                                            href="<?= base_url(); ?>dist/images/products/p4.jpg">
+                                            href="<?= $products_value->products_slide4; ?>">
                                             <img class="img-responsive" alt=""
                                                 src="<?= base_url(); ?>dist/images/blank.gif"
-                                                data-echo="<?= base_url(); ?>dist/images/products/p4.jpg" />
+                                                data-echo="<?= $products_value->products_slide4; ?>" />
                                         </a>
                                     </div>
                                     <!-- /.single-product-gallery-item -->
 
-                                    <div class="single-product-gallery-item" id="slide5">
-                                        <a data-lightbox="image-1" data-title="Gallery"
-                                            href="<?= base_url(); ?>dist/images/products/p5.jpg">
-                                            <img class="img-responsive" alt=""
-                                                src="<?= base_url(); ?>dist/images/blank.gif"
-                                                data-echo="<?= base_url(); ?>dist/images/products/p5.jpg" />
-                                        </a>
-                                    </div>
-                                    <!-- /.single-product-gallery-item -->
-
-                                    <div class="single-product-gallery-item" id="slide6">
-                                        <a data-lightbox="image-1" data-title="Gallery"
-                                            href="<?= base_url(); ?>dist/images/products/p6.jpg">
-                                            <img class="img-responsive" alt=""
-                                                src="<?= base_url(); ?>dist/images/blank.gif"
-                                                data-echo="<?= base_url(); ?>dist/images/products/p6.jpg" />
-                                        </a>
-                                    </div>
-                                    <!-- /.single-product-gallery-item -->
-
-                                    <div class="single-product-gallery-item" id="slide7">
-                                        <a data-lightbox="image-1" data-title="Gallery"
-                                            href="<?= base_url(); ?>dist/images/products/p7.jpg">
-                                            <img class="img-responsive" alt=""
-                                                src="<?= base_url(); ?>dist/images/blank.gif"
-                                                data-echo="<?= base_url(); ?>dist/images/products/p7.jpg" />
-                                        </a>
-                                    </div>
-                                    <!-- /.single-product-gallery-item -->
-
-                                    <div class="single-product-gallery-item" id="slide8">
-                                        <a data-lightbox="image-1" data-title="Gallery"
-                                            href="<?= base_url(); ?>dist/images/products/p8.jpg">
-                                            <img class="img-responsive" alt=""
-                                                src="<?= base_url(); ?>dist/images/blank.gif"
-                                                data-echo="<?= base_url(); ?>dist/images/products/p8.jpg" />
-                                        </a>
-                                    </div>
-                                    <!-- /.single-product-gallery-item -->
-
-                                    <div class="single-product-gallery-item" id="slide9">
-                                        <a data-lightbox="image-1" data-title="Gallery"
-                                            href="<?= base_url(); ?>dist/images/products/p9.jpg">
-                                            <img class="img-responsive" alt=""
-                                                src="<?= base_url(); ?>dist/images/blank.gif"
-                                                data-echo="<?= base_url(); ?>dist/images/products/p9.jpg" />
-                                        </a>
-                                    </div>
+                          
+                             
+                       
                                     <!-- /.single-product-gallery-item -->
 
                                 </div>
@@ -378,19 +343,28 @@
                                     <div id="owl-single-product-thumbnails">
                                         <div class="item">
                                             <a class="horizontal-thumb active" data-target="#owl-single-product"
-                                                data-slide="1" href="#slide1">
+                                                data-slide="0" href="#slide0">
                                                 <img class="img-responsive" alt=""
                                                     src="<?= base_url(); ?>dist/images/blank.gif"
-                                                    data-echo="<?= base_url(); ?>dist/images/products/p1.jpg" />
+                                                    data-echo="<?= $products_value->products_slide0; ?>" />
                                             </a>
                                         </div>
 
                                         <div class="item">
+                                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="1"
+                                                href="#slide1">
+                                                <img class="img-responsive" alt=""
+                                                    src="<?= base_url(); ?>dist/images/blank.gif"
+                                                    data-echo="<?= $products_value->products_slide1; ?>" />
+                                            </a>
+                                        </div>
+                                        <div class="item">
+
                                             <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2"
                                                 href="#slide2">
                                                 <img class="img-responsive" alt=""
                                                     src="<?= base_url(); ?>dist/images/blank.gif"
-                                                    data-echo="<?= base_url(); ?>dist/images/products/p2.jpg" />
+                                                    data-echo="<?= $products_value->products_slide2; ?>" />
                                             </a>
                                         </div>
                                         <div class="item">
@@ -399,7 +373,7 @@
                                                 href="#slide3">
                                                 <img class="img-responsive" alt=""
                                                     src="<?= base_url(); ?>dist/images/blank.gif"
-                                                    data-echo="<?= base_url(); ?>dist/images/products/p3.jpg" />
+                                                    data-echo="<?= $products_value->products_slide3; ?>" />
                                             </a>
                                         </div>
                                         <div class="item">
@@ -408,54 +382,11 @@
                                                 href="#slide4">
                                                 <img class="img-responsive" alt=""
                                                     src="<?= base_url(); ?>dist/images/blank.gif"
-                                                    data-echo="<?= base_url(); ?>dist/images/products/p4.jpg" />
+                                                    data-echo="<?= $products_value->products_slide4; ?>" />
                                             </a>
                                         </div>
-                                        <div class="item">
-
-                                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="5"
-                                                href="#slide5">
-                                                <img class="img-responsive" alt=""
-                                                    src="<?= base_url(); ?>dist/images/blank.gif"
-                                                    data-echo="<?= base_url(); ?>dist/images/products/p5.jpg" />
-                                            </a>
-                                        </div>
-                                        <div class="item">
-
-                                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="6"
-                                                href="#slide6">
-                                                <img class="img-responsive" alt=""
-                                                    src="<?= base_url(); ?>dist/images/blank.gif"
-                                                    data-echo="<?= base_url(); ?>dist/images/products/p6.jpg" />
-                                            </a>
-                                        </div>
-                                        <div class="item">
-
-                                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="7"
-                                                href="#slide7">
-                                                <img class="img-responsive" alt=""
-                                                    src="<?= base_url(); ?>dist/images/blank.gif"
-                                                    data-echo="<?= base_url(); ?>dist/images/products/p7.jpg" />
-                                            </a>
-                                        </div>
-                                        <div class="item">
-
-                                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="8"
-                                                href="#slide8">
-                                                <img class="img-responsive" alt=""
-                                                    src="<?= base_url(); ?>dist/images/blank.gif"
-                                                    data-echo="<?= base_url(); ?>dist/images/products/p8.jpg" />
-                                            </a>
-                                        </div>
-                                        <div class="item">
-
-                                            <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="9"
-                                                href="#slide9">
-                                                <img class="img-responsive" alt=""
-                                                    src="<?= base_url(); ?>dist/images/blank.gif"
-                                                    data-echo="<?= base_url(); ?>dist/images/products/p9.jpg" />
-                                            </a>
-                                        </div>
+                                     
+                                    
                                     </div>
                                     <!-- /#owl-single-product-thumbnails -->
 
@@ -477,11 +408,12 @@
                                         <div class="col-lg-12">
                                             <div class="pull-right">
                                                 <div class="rating rateit-small"></div>
+                                                <?= $products_value->products_rating; ?>
                                             </div>
                                             <div class="pull-right">
-                                                <div class="reviews">
+                                                <!-- <div class="reviews">
                                                     <a href="#" class="lnk">(13 دیدگاه)</a>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -509,19 +441,7 @@
                                 <!-- /.stock-container -->
 
                                 <div class="description-container m-t-20">
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
-                                        برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                                        کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
-                                        جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
-                                        ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می
-                                        توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به
-                                        پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته
-                                        اهل دنیای موجود طراحی اساسا مورد استفاده قرار</p>
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
-                                        برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                                        کاربردی می باشد</p>
+                                <?= $products_value->products_cond; ?>
                                 </div>
                                 <!-- /.description-container -->
 
@@ -531,26 +451,13 @@
 
                                         <div class="col-sm-6 col-xs-6">
                                             <div class="price-box">
-                                                <span class="price">99 هزار تومان</span>
-                                                <span class="price-strike">99 هزار تومان</span>
+                                                <span class="price"><?php Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'); ?></span>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-6 col-xs-6">
-                                            <div class="favorite-button m-t-5">
-                                                <a class="btn btn-primary" data-toggle="tooltip" data-placement="right"
-                                                    title="افزودن به علاقه مندیها" href="#">
-                                                    <i class="fa fa-heart"></i>
-                                                </a>
-                                                <a class="btn btn-primary" data-toggle="tooltip" data-placement="right"
-                                                    title="افزودن برای مقایسه" href="#">
-                                                    <i class="fa fa-signal"></i>
-                                                </a>
-                                                <a class="btn btn-primary" data-toggle="tooltip" data-placement="right"
-                                                    title="ارسال به دوستان" href="#">
-                                                    <i class="fa fa-envelope"></i>
-                                                </a>
-                                            </div>
+                                        <?= $products_value->products_guaranteed; ?>
+                                        
                                         </div>
 
                                     </div>
@@ -561,27 +468,11 @@
                                 <div class="quantity-container info-container">
                                     <div class="row">
 
-                                        <div class="qty">
-                                            <span class="label">تعداد :</span>
-                                        </div>
-
-                                        <div class="qty-count">
-                                            <div class="cart-quantity">
-                                                <div class="quant-input">
-                                                    <div class="arrows">
-                                                        <div class="arrow plus gradient"><span class="ir"><i
-                                                                    class="icon fa fa-sort-asc"></i></span></div>
-                                                        <div class="arrow minus gradient"><span class="ir"><i
-                                                                    class="icon fa fa-sort-desc"></i></span></div>
-                                                    </div>
-                                                    <input type="text" value="1">
-                                                </div>
-                                            </div>
-                                        </div>
+                        
 
                                         <div class="add-btn">
-                                            <a href="#" class="btn btn-primary"><i
-                                                    class="fa fa-shopping-cart inner-right-vs"></i> افزودن به سبد</a>
+                                            <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
+                                                    class="fa fa-shopping-cart inner-right-vs"></i> خرید محصول</a>
                                         </div>
 
 
@@ -618,16 +509,7 @@
 
                                 <div id="description" class="tab-pane in active">
                                     <div class="product-tab">
-                                        <p class="text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-                                            سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع
-                                            با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته،
-                                            حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت
-                                            بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در
-                                            زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود
-                                            در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل
-                                            حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا
-                                            مورد استفاده قرار گیرد.</p>
+                                        <div class="text"><?= $products_value->products_content; ?></div>
                                     </div>
                                 </div>
                                 <!-- /.tab-pane -->

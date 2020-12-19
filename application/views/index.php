@@ -1312,8 +1312,8 @@
                                                 <div class="product-image">
                                                     <div class="image">
                                                         <a href="<?= base_url('Detail/index'); ?>/<?= $products_value->products_id; ?>">
-                                                            <img src="<?= $products_value->products_img; ?>" alt="">
-                                                            <img src="<?= base_url(); ?>dist/images/products/p1_hover.jpg" alt=""
+                                                            <img src="<?= $products_value->products_slide0; ?>" alt="">
+                                                            <img src="<?= $products_value->products_slide1; ?>" alt=""
                                                                 class="hover-image">
                                                         </a>
                                                     </div>
@@ -1328,10 +1328,7 @@
                                                     <div class="description"></div>
                                                     <div class="product-price pro-price"> 
                                                     <span id="price" class="price"> 
-                                                        <?php
-                                                                                                                  Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]');
-
-                                                        ?>
+                                                        <?php Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'); ?>
                                                     
                                                     </span> 
                                                     </div>
