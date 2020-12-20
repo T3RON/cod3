@@ -40,6 +40,7 @@ class Digikala extends CI_Controller {
         $products_content = 'section.c-content-expert__summary';
         $products_guaranteed = 'div.c-product__guaranteed';
         $products_rating = 'div.c-product__engagement-rating';
+        $products_params = 'div.c-params';
 
 
 
@@ -68,6 +69,7 @@ class Digikala extends CI_Controller {
         Scraper_helper::Scraper_site($dkp,$products_cond,'products_cond','products','products_code');
         Scraper_helper::Scraper_site($dkp,$products_guaranteed,'products_guaranteed','products','products_code');
         Scraper_helper::Scraper_site($dkp,$products_rating,'products_rating','products','products_code');
+        Scraper_helper::Scraper_site($dkp,$products_params,'products_params','products','products_code');
         
 
         if ($result) {

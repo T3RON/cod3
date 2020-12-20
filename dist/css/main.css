@@ -9758,7 +9758,201 @@ header {
 }
 
 .c-mask .js-mask {
-    text-align: justify !important;
-    line-height: 27px !important;
-    font-size: 17px !important;
+    line-height: 31px;
+    font-family: 'Yekan', sans-serif;
+    font-size: 16px;
+}
+
+
+/* .c-params__headline {
+    font-size: 25px;
+    font-weight: 700;
+    color: #5a1313;
+    background: #f8f8f8;
+    padding: 10px 19px;
+    border-radius: 118px;
+    text-align: center;
+}
+
+.c-params__title {
+    font-size: 18px;
+    color: #b41414;
+    font-weight: bolder;
+}
+
+.c-params__list-key {
+    background: #eee;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.c-params__list-value {
+    background: #eee;
+    padding: 5px 15px;
+    border-radius: 5px;
+} */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+.c-params__headline {
+    color: #6f6f6f;
+    font-size: 30px;
+    font-size: 2.143rem;
+    line-height: 1.467;
+    font-weight: 500;
+    margin-bottom: 35px;
+    letter-spacing: -.6px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.c-params__title {
+    letter-spacing: -.3px;
+    position: relative;
+    color: #4d4d4d;
+    padding-right: 19px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-size: 1.143rem;
+    line-height: 1.375;
+}
+
+element.style {}
+
+.c-params__title {
+    letter-spacing: -.3px;
+    position: relative;
+    color: #4d4d4d;
+    padding-right: 19px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-size: 1.143rem;
+    line-height: 1.375;
+}
+
+h3,
+h4 {
+    font-family: IRANYekan, sans-serif;
+    font-weight: 400;
+    color: #555;
+}
+
+h3 {
+    font-size: 20px;
+    font-size: 1.429rem;
+    line-height: 1.1;
+}
+
+blockquote,
+body,
+dd,
+dl,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+legend,
+ol,
+p,
+pre,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.c-params__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 70px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.c-params__list li {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 8px -8px;
+}
+
+.c-params__list-key,
+.c-params__list-value {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.c-params__list-value {
+    -ms-flex: 0 0 77.8%;
+    flex: 0 0 77.8%;
+    max-width: 77.8%;
+}
+
+.c-params__list-key,
+.c-params__list-value {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    -webkit-box-flex: 0;
+}
+
+.c-params__list-key .block,
+.c-params__list-value .block {
+    display: block;
+    color: #4d4d4d;
+    min-height: 47px;
+    background: #fafafa;
+    font-size: 13px;
+    font-size: .929rem;
+    line-height: 1.692;
+    position: relative;
+    letter-spacing: -.3px;
+    padding: 14px 18px 12px;
+}
+
+.c-params__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 70px;
 }

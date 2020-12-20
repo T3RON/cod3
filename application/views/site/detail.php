@@ -455,7 +455,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-sm-6 col-xs-6">
+                                        <div style="font-size: 16px;line-height: 30px;" class="col-sm-6 col-xs-6">
                                         <?= $products_value->products_guaranteed; ?>
                                         
                                         </div>
@@ -518,87 +518,16 @@
                                     <div class="product-tab">
 
                                         <div class="product-reviews">
-                                            <h4 class="title">دیدگاه مشتریان</h4>
-
-                                            <div class="reviews">
-                                                <div class="review">
-                                                    <div class="review-title"><span class="summary">عاشقشم</span><span
-                                                            class="date"><i class="fa fa-calendar"></i><span>1 روز
-                                                                پیش</span></span>
-                                                    </div>
-                                                    <div class="text">"لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                                                        صنعت چاپ و با استفاده از طراحان گرافیک است"</div>
-                                                </div>
-
-                                            </div>
+                                        <?= $products_value->products_params; ?>
                                             <!-- /.reviews -->
                                         </div>
                                         <!-- /.product-reviews -->
 
 
 
-                                        <div class="product-add-review">
+                                        <!-- <div class="product-add-review">
                                             <h4 class="title">دیدگاه خود را بیان کنید</h4>
-                                            <div class="review-table">
-                                                <div class="table-responsive">
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th class="cell-label">&nbsp;</th>
-                                                                <th>1 ستاره</th>
-                                                                <th>2 ستاره</th>
-                                                                <th>3 ستاره</th>
-                                                                <th>4 ستاره</th>
-                                                                <th>5 ستاره</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="cell-label">کیفیت</td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="1"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="2"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="3"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="4"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="5"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cell-label">قیمت</td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="1"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="2"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="3"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="4"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="5"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="cell-label">ارزش خرید</td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="1"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="2"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="3"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="4"></td>
-                                                                <td><input type="radio" name="quality" class="radio"
-                                                                        value="5"></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <!-- /.table .table-bordered -->
-                                                </div>
-                                                <!-- /.table-responsive -->
-                                            </div>
-                                            <!-- /.review-table -->
+                                         
 
                                             <div class="review-form">
                                                 <div class="form-container">
@@ -612,14 +541,12 @@
                                                                     <input type="text" class="form-control txt"
                                                                         id="exampleInputName" placeholder="">
                                                                 </div>
-                                                                <!-- /.form-group -->
                                                                 <div class="form-group">
                                                                     <label for="exampleInputSummary">عنوان <span
                                                                             class="astk">*</span></label>
                                                                     <input type="text" class="form-control txt"
                                                                         id="exampleInputSummary" placeholder="">
                                                                 </div>
-                                                                <!-- /.form-group -->
                                                             </div>
 
                                                             <div class="col-md-6">
@@ -630,25 +557,19 @@
                                                                         id="exampleInputReview" rows="4"
                                                                         placeholder=""></textarea>
                                                                 </div>
-                                                                <!-- /.form-group -->
                                                             </div>
                                                         </div>
-                                                        <!-- /.row -->
 
                                                         <div class="action text-right">
                                                             <button class="btn btn-primary btn-upper">ارسال
                                                                 دیدگاه</button>
                                                         </div>
-                                                        <!-- /.action -->
 
                                                     </form>
-                                                    <!-- /.cnt-form -->
                                                 </div>
-                                                <!-- /.form-container -->
                                             </div>
-                                            <!-- /.review-form -->
 
-                                        </div>
+                                        </div> -->
                                         <!-- /.product-add-review -->
 
                                     </div>
