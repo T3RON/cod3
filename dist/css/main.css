@@ -9802,15 +9802,19 @@ section {
 }
 
 .c-params__headline {
-    color: #6f6f6f;
+    color: #2f163b;
     font-size: 30px;
-    font-size: 2.143rem;
     line-height: 1.467;
     font-weight: 500;
+    background: #f4f4f4;
     margin-bottom: 35px;
     letter-spacing: -.6px;
+    border-radius: 3px;
+    padding: 5px 10px;
 }
 
+
+}
 h2 {
     display: block;
     font-size: 1.5em;
@@ -9820,7 +9824,6 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-
 .c-params__title {
     letter-spacing: -.3px;
     position: relative;
@@ -9831,33 +9834,27 @@ h2 {
     font-size: 1.143rem;
     line-height: 1.375;
 }
-
 element.style {}
-
 .c-params__title {
     letter-spacing: -.3px;
     position: relative;
-    color: #4d4d4d;
+    color: #d92626;
     padding-right: 19px;
     margin-bottom: 25px;
     font-size: 16px;
-    font-size: 1.143rem;
     line-height: 1.375;
 }
-
 h3,
 h4 {
     font-family: IRANYekan, sans-serif;
     font-weight: 400;
     color: #555;
 }
-
 h3 {
     font-size: 20px;
     font-size: 1.429rem;
     line-height: 1.1;
 }
-
 blockquote,
 body,
 dd,
@@ -9879,7 +9876,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
 h3 {
     display: block;
     font-size: 1.17em;
@@ -9889,13 +9885,11 @@ h3 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-
 .c-params__list {
     list-style: none;
     padding: 0;
     margin-bottom: 70px;
 }
-
 ul {
     display: block;
     list-style-type: disc;
@@ -9905,28 +9899,23 @@ ul {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-
 .c-params__list li {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     margin: 8px -8px;
 }
-
 .c-params__list-key,
 .c-params__list-value {
     padding-right: 8px;
     padding-left: 8px;
 }
-
 .c-params__list-value {
     -ms-flex: 0 0 77.8%;
     flex: 0 0 77.8%;
     max-width: 77.8%;
 }
-
 .c-params__list-key,
 .c-params__list-value {
     position: relative;
@@ -9936,7 +9925,6 @@ ul {
     padding-left: 10px;
     -webkit-box-flex: 0;
 }
-
 .c-params__list-key .block,
 .c-params__list-value .block {
     display: block;
@@ -9944,13 +9932,11 @@ ul {
     min-height: 47px;
     background: #fafafa;
     font-size: 13px;
-    font-size: .929rem;
     line-height: 1.692;
     position: relative;
     letter-spacing: -.3px;
     padding: 14px 18px 12px;
 }
-
 .c-params__list {
     list-style: none;
     padding: 0;
