@@ -465,20 +465,7 @@
                                 </div>
                                 <!-- /.price-container -->
 
-                                <div class="quantity-container info-container">
-                                    <div class="row">
-
-                        
-
-                                        <div class="add-btn">
-                                            <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
-                                                    class="fa fa-shopping-cart inner-right-vs"></i> خرید محصول</a>
-                                        </div>
-
-
-                                    </div>
-                                    <!-- /.row -->
-                                </div>
+                         
                                 <!-- /.quantity-container -->
 
 
@@ -489,16 +476,77 @@
                             <!-- /.product-info -->
                         </div>
                         <!-- /.col-sm-7 -->
+                        
                     </div>
                     <!-- /.row -->
+
+                    <div class="quantity-container info-container">
+                    
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12 col-xs-12 col-sm-12 title-affilate">
+                            لیست فروشنده / گارانتی‌های این محصول
+                            </div>
+                        </div>
+                                    <div class="row list-price">
+                                        <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12 list-price-title">
+                                        فروشگاه دیجی کالا
+                                        </div>
+                            <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12">
+                                    <div class="add-btn">
+                                            <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
+                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?php Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'); ?></a>
+                                        </div>      
+                            </div>
+                                 
+
+                                      
+
+
+                                    </div>
+
+                                    <div class="row list-price">
+                                        <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12 list-price-title">
+                                        فروشگاه مقداد آی تی
+                                        </div>
+                            <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12">
+                                    <div class="add-btn">
+                                            <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
+                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?php Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'); ?></a>
+                                        </div>      
+                            </div>
+                                 
+
+                                      
+
+
+                                    </div>
+
+                                    <div class="row list-price">
+                                        <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12 list-price-title">
+                                        فروشگاه  گجت
+                                        </div>
+                            <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12">
+                                    <div class="add-btn">
+                                            <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
+                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?php Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'); ?></a>
+                                        </div>      
+                            </div>
+                                 
+
+                                      
+
+
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
                 </div>
 
                 <div class="product-tabs inner-bottom-xs">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3">
                             <ul id="product-tabs" class="nav nav-tabs nav-tab-cell">
-                                <li class="active"><a data-toggle="tab" href="#description">توضیحات</a></li>
-                                <li><a data-toggle="tab" href="#review">بررسی</a></li>
+                                <li class="active"><a data-toggle="tab" href="#description">توضیحات محصول </a></li>
+                                <li><a data-toggle="tab" href="#review">مشخصات فنی</a></li>
                                 <li><a data-toggle="tab" href="#tags">برچسب ها</a></li>
                             </ul>
                             <!-- /.nav-tabs #product-tabs -->
