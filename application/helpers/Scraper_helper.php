@@ -26,6 +26,21 @@ class Scraper_helper {
 		}
 	
 	}
+	
+	public static function Scraper_off($dkp,$selector)
+	{
+
+		$target_url = "https://www.digikala.com/product/".$dkp;
+		$html = new simple_html_dom();
+		$html->load_file($target_url);    
+		
+			foreach($html->find($selector) as $result)
+		{
+			echo $result->innertext;
+		
+		}
+	
+	}
 	// echo strlen(Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'));
 
 	public static function Scraper_site($dkp,$selector,$field,$table,$where)

@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="cnt-home">
+<body onload="writePHPscript()" class="cnt-home">
 	<header class="header-style-1">
 
 		<!-- ============================================== TOP MENU ============================================== -->
@@ -131,7 +131,7 @@
 						<div class="navbar-collapse collapse" id="mc-horizontal-menu-collapse">
 							<div class="nav-outer">
 								<ul class="nav navbar-nav">
-									<li class="active dropdown"> <a href="home.html">صفحه اصلی</a> </li>
+									<li class="active dropdown"> <a href="<?= base_url(); ?>">صفحه اصلی</a> </li>
 									<li class="dropdown yamm mega-menu"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">لباس</a>
 										<ul class="dropdown-menu container">
 											<li>

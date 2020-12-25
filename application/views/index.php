@@ -1319,7 +1319,7 @@
                                                     </div>
                                                     <!-- /.image -->
 
-                                                    <div class="tag new"><span>جدید</span></div>
+                                                    <!-- <div class="tag new"><span></span></div> -->
                                                 </div>
                                                 <!-- /.product-image -->
 
@@ -1327,9 +1327,8 @@
                                                     <h3 class="name"><a href="<?= $products_value->products_url; ?>"><?= $products_value->products_title; ?></a></h3>
                                                     <div class="description"></div>
                                                     <div class="product-price pro-price"> 
-                                                    <span id="price" class="price"> 
-                                                        <?php Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'); ?>
-                                                    
+                                                    <span id="<?= $products_value->products_code; ?>" class="price"> 
+                                                    <?= $products_value->products_price; ?>
                                                     </span> 
                                                     </div>
                                                     <!-- /.product-price -->
@@ -3453,6 +3452,15 @@
 <!-- /.info-boxes -->
 <!-- ============================================== INFO BOXES : END ============================================== -->
 
+<script>
 
+// function writePHPscript(){
+//     setTimeout( function() { 
+//         document.getElementById('').innerHTML = "";    
+//     }, 10000); 
+
+// };
+
+</script>
 
 <?php include_once (APPPATH.'views/_layout/site_footer.php'); ?>

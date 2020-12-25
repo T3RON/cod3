@@ -23,7 +23,9 @@ class Digikala extends CI_Controller {
     function index()
     {
 
-        $this->load->view('panel/'.$this->tbl_name);
+        $output['products'] = $this->MY_Model->select('products');
+
+        $this->load->view('panel/Digikala',$output);
     }
 
     function update () {
@@ -41,6 +43,7 @@ class Digikala extends CI_Controller {
         $products_guaranteed = 'div.c-product__guaranteed';
         $products_rating = 'div.c-product__engagement-rating';
         $products_params = 'div.c-params';
+        $products_price = 'div.c-product__seller-price-pure.js-price-value';
 
 
 
@@ -52,6 +55,7 @@ class Digikala extends CI_Controller {
 		//Scraper_helper::download_page($dkp,$tag,$url);
 		$data = array(
 			'products_code' => $dkp,
+			'products_tag' => $tag,
 			'products_url' => $products_url
 		);
 		$result= $this->MY_Model->insert('products',$data);
@@ -70,6 +74,7 @@ class Digikala extends CI_Controller {
         Scraper_helper::Scraper_site($dkp,$products_guaranteed,'products_guaranteed','products','products_code');
         Scraper_helper::Scraper_site($dkp,$products_rating,'products_rating','products','products_code');
         Scraper_helper::Scraper_site($dkp,$products_params,'products_params','products','products_code');
+        Scraper_helper::Scraper_site($dkp,$products_price,'products_price','products','products_code');
         
 
         if ($result) {
@@ -85,6 +90,16 @@ class Digikala extends CI_Controller {
 
 
 
+    }
+
+    function delete () { 
+        $id = $this->uri->segment(3);
+        $result= $this->MY_Model->delete('products');
+        if ($result) {
+            redirect('panel/Digikala/index');
+         }else {
+             redirect('panel/Digikala/index');
+         }
     }
 
 

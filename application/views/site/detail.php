@@ -271,6 +271,7 @@
             </div>
             <!-- /.sidebar -->
 			<?php foreach($products as $products_value) { ?>
+                <meta name="description" content="<?= $products_value->meta_description; ?>">
             <div class='col-xs-12 col-sm-12 col-md-9 rht-col'>
                 <div class="detail-block">
                     <div class="row">
@@ -451,7 +452,7 @@
 
                                         <div class="col-sm-6 col-xs-6">
                                             <div class="price-box">
-                                                <span class="price"><?php Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'); ?></span>
+                                                <span class="price"><?= $products_value->products_price; ?> تومان</span>
                                             </div>
                                         </div>
 
@@ -494,7 +495,7 @@
                             <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12">
                                     <div class="add-btn">
                                             <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
-                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?php Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'); ?></a>
+                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?= $products_value->products_price; ?> تومان</a>
                                         </div>      
                             </div>
                                  
@@ -511,7 +512,7 @@
                             <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12">
                                     <div class="add-btn">
                                             <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
-                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?php Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'); ?></a>
+                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?= $products_value->products_price; ?> تومان</a>
                                         </div>      
                             </div>
                                  
@@ -528,7 +529,7 @@
                             <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12">
                                     <div class="add-btn">
                                             <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
-                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?php Scraper_helper::Scraper_price($products_value->products_code,'div[class=c-product__seller-price-pure js-price-value]'); ?></a>
+                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?= $products_value->products_price; ?> تومان</a>
                                         </div>      
                             </div>
                                  
