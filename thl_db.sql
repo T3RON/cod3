@@ -1,5 +1,5 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
@@ -8,6 +8,7 @@
 -- PHP Version: 7.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -26,11 +27,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `thl_ads`
 --
 
-CREATE TABLE `thl_ads` (
-  `ads_id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `thl_ads`;
+CREATE TABLE IF NOT EXISTS `thl_ads` (
+  `ads_id` int(11) NOT NULL AUTO_INCREMENT,
   `ads_title` text NOT NULL,
   `ads_img` text NOT NULL,
-  `ads_expire` text NOT NULL
+  `ads_expire` text NOT NULL,
+  PRIMARY KEY (`ads_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -39,9 +42,11 @@ CREATE TABLE `thl_ads` (
 -- Table structure for table `thl_cate`
 --
 
-CREATE TABLE `thl_cate` (
-  `cate_id` int(11) NOT NULL,
-  `cate_title` text NOT NULL
+DROP TABLE IF EXISTS `thl_cate`;
+CREATE TABLE IF NOT EXISTS `thl_cate` (
+  `cate_id` int(11) NOT NULL AUTO_INCREMENT,
+  `cate_title` text NOT NULL,
+  PRIMARY KEY (`cate_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
@@ -58,8 +63,9 @@ INSERT INTO `thl_cate` (`cate_id`, `cate_title`) VALUES
 -- Table structure for table `thl_products`
 --
 
-CREATE TABLE `thl_products` (
-  `products_id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `thl_products`;
+CREATE TABLE IF NOT EXISTS `thl_products` (
+  `products_id` int(11) NOT NULL AUTO_INCREMENT,
   `site_id` int(11) DEFAULT NULL,
   `meta_description` text NOT NULL,
   `products_url` text NOT NULL,
@@ -79,8 +85,9 @@ CREATE TABLE `thl_products` (
   `products_params` text NOT NULL,
   `cate_id` int(11) DEFAULT NULL,
   `sub_cate_id` int(11) DEFAULT NULL,
-  `status_id` int(11) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `status_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`products_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=133 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `thl_products`
@@ -122,11 +129,13 @@ CREATE TABLE `thl_rel_products` (
 -- Table structure for table `thl_site`
 --
 
-CREATE TABLE `thl_site` (
-  `site_id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `thl_site`;
+CREATE TABLE IF NOT EXISTS `thl_site` (
+  `site_id` int(11) NOT NULL AUTO_INCREMENT,
   `site_title` text NOT NULL,
   `site_tag` text NOT NULL,
-  `site_url` text NOT NULL
+  `site_url` text NOT NULL,
+  PRIMARY KEY (`site_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -135,9 +144,11 @@ CREATE TABLE `thl_site` (
 -- Table structure for table `thl_state`
 --
 
-CREATE TABLE `thl_state` (
-  `state_id` int(11) NOT NULL,
-  `state_title` text NOT NULL
+DROP TABLE IF EXISTS `thl_state`;
+CREATE TABLE IF NOT EXISTS `thl_state` (
+  `state_id` int(11) NOT NULL AUTO_INCREMENT,
+  `state_title` text NOT NULL,
+  PRIMARY KEY (`state_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -146,11 +157,14 @@ CREATE TABLE `thl_state` (
 -- Table structure for table `thl_sub_cate`
 --
 
-CREATE TABLE `thl_sub_cate` (
-  `sub_cate_id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `thl_sub_cate`;
+CREATE TABLE IF NOT EXISTS `thl_sub_cate` (
+  `sub_cate_id` int(11) NOT NULL AUTO_INCREMENT,
   `cate_id` int(11) NOT NULL,
-  `sub_cate_title` text NOT NULL
+  `sub_cate_title` text NOT NULL,
+  PRIMARY KEY (`sub_cate_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+COMMIT;
 
 --
 -- Dumping data for table `thl_sub_cate`
