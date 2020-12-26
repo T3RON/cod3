@@ -6,17 +6,15 @@
  * Time: 04:13 AM
  */
 
-class Digikala extends CI_Controller {
+class Cate extends CI_Controller {
 
-    private $tbl_name = 'products';
+    private $tbl_name = 'cate';
 
     function __construct()
     {
         parent::__construct();
 
-        $this->load->library('simple_html_dom');
         $this->load->helper('url');
-		$this->load->helper('Scraper_helper');
 		$this->load->model('MY_Model');
 
     }
@@ -24,11 +22,20 @@ class Digikala extends CI_Controller {
     function index()
     {
 
-        $output['products'] = $this->MY_Model->select('products');
-        $output['sub_cate'] = $this->MY_Model->select('sub_cate');
         $output['cate'] = $this->MY_Model->select('cate');
 
-        $this->load->view('panel/Digikala',$output);
+        $this->load->view('panel/Cate',$output);
+    }
+
+    function insert()
+    {
+
+        $data = array(
+			'cate_title' => $this->input->post('cate_title')
+		);
+		$result= $this->MY_Model->insert('cate',$data);
+
+        $this->load->view('panel/Cate');
     }
 
     function update () {
@@ -51,8 +58,7 @@ class Digikala extends CI_Controller {
 
 
         $dkp = $this->input->post('products_code');
-        $tag = "digikala";
-        // $tag = $this->input->post('products_tag');
+        $tag = $this->input->post('products_tag');
         $url = 'https://www.digikala.com/product/'.$dkp;
         $products_url = 'https://affstat.adro.co/click/a135cd72-06eb-4008-8903-9afa1da33e12/'.base64_encode('https://www.digikala.com/product/'.$dkp);
 
@@ -96,19 +102,13 @@ class Digikala extends CI_Controller {
 
     }
 
-    function get_sub_cate() {
-        $cate_id = $this->input->post('id',TRUE);
-        $data = $this->MY_Model->select_single_where('sub_cate','cate',$cate_id);
-        echo json_encode($data);
-    }
-
     function delete () { 
         $id = $this->uri->segment(4);
-        $result= $this->MY_Model->delete('products',$id);
+        $result= $this->MY_Model->delete('cate',$id);
         if ($result) {
-            redirect('panel/Digikala/index');
+            redirect('panel/Cate/index');
          }else {
-             redirect('panel/Digikala/index');
+             redirect('panel/Cate/index');
          }
     }
 
