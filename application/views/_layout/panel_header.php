@@ -354,12 +354,12 @@
                         <li class="@@indexactive"><a href="index.html"><i class="zmdi zmdi-home"></i> داشبرد</a></li>
 
                         <li class="@@variantsactive">
-                            <a href="default.htm"><i class="zmdi zmdi-view-week"></i> افزودن محصول</a>
+                            <a href="<?= base_url('panel/Digikala/index'); ?>"><i class="zmdi zmdi-view-week"></i> افزودن محصول</a>
 
-                
+                            
                         </li>
 
-                        <li class="@@typeactive"><a href="typography.html"><i class="zmdi zmdi-format-underlined"></i> تایپوگرافی</a></li>
+                        <li class="@@typeactive"><a href="<?= base_url('panel/Refresh/update'); ?>"><i class="zmdi zmdi-format-underlined"></i> بروز رسانی قیمت</a></li>
 
                         <li class="@@widgetactive"><a href="widgets.html"><i class="zmdi zmdi-widgets"></i> ویجت ها</a></li>
 
