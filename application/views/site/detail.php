@@ -555,12 +555,13 @@
                         <div class="col-sm-12 col-md-9 col-lg-9">
 
                             <div class="tab-content">
-
+                            <?php if(is_null($products_value->products_content)) { ?>
                                 <div id="description" class="tab-pane in active">
                                     <div class="product-tab">
                                         <div class="text"><?= $products_value->products_content; ?></div>
                                     </div>
                                 </div>
+                                <?php } ?>
                                 <!-- /.tab-pane -->
 
                                 <div id="review" class="tab-pane">
