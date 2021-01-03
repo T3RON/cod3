@@ -35,7 +35,7 @@ class Cate extends CI_Controller {
 		);
 		$result= $this->MY_Model->insert('cate',$data);
 
-        $this->load->view('panel/Cate');
+        redirect('panel/Cate/index');
     }
 
     function update () {

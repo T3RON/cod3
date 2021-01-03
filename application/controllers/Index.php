@@ -18,7 +18,9 @@ class Index extends CI_Controller {
     function index()
     {
 
-        $output['products'] = $this->MY_Model->select_limit('products',7);
+        $output['one_cate'] = $this->MY_Model->select('cate');
+        $output['cate'] = $this->MY_Model->get_categories();
+        $output['products'] = $this->MY_Model->select_orderby('products','date','DESC');
 
 
         $this->load->view('index',$output);

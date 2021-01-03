@@ -132,187 +132,38 @@
 							<div class="nav-outer">
 								<ul class="nav navbar-nav">
 									<li class="active dropdown"> <a href="<?= base_url(); ?>">صفحه اصلی</a> </li>
-									<li class="dropdown yamm mega-menu"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">لباس</a>
+									<li class="dropdown yamm mega-menu"> <a href="home.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">دسته بندی کالا ها</a>
 										<ul class="dropdown-menu container">
 											<li>
 												<div class="yamm-content ">
 													<div class="row">
+													<?php foreach($cate as $cate_value) { ?>
 														<div class="col-xs-12 col-sm-6 col-md-2 col-menu">
-															<h2 class="title">عنوان دسته بندی</h2>
+															<h2 class="title"><?= $cate_value->cate_title; ?></h2>
+															<?php if(!empty($cate_value->subs)) { ?>
 															<ul class="links">
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی </a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
+																<?php foreach ($cate_value->subs as $sub)  { ?>
+																<li><a href="#"><?= $sub->sub_cate_title; ?></a></li>
+																<?PHP } ?>
+														
 															</ul>
+															<?php } ?>
 														</div>
 														<!-- /.col -->
-
-														<div class="col-xs-12 col-sm-6 col-md-2 col-menu">
-															<h2 class="title">عنوان دسته بندی</h2>
-															<ul class="links">
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی </a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-															</ul>
-														</div>
-														<!-- /.col -->
-
-														<div class="col-xs-12 col-sm-6 col-md-2 col-menu">
-															<h2 class="title">عنوان دسته بندی</h2>
-															<ul class="links">
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-															</ul>
-														</div>
-														<!-- /.col -->
-
-														<div class="col-xs-12 col-sm-6 col-md-2 col-menu">
-															<h2 class="title">عنوان دسته بندی</h2>
-															<ul class="links">
-																<li><a href="#">عنوان دسته بندی </a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-															</ul>
-														</div>
-														<!-- /.col -->
-
-														<div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"> <img class="img-responsive" src="assets/images/banners/top-menu-banner.jpg" alt=""> </div>
+														<?PHP } ?>
+														<div class="col-xs-12 col-sm-6 col-md-4 col-menu banner-image"> <img class="img-responsive" src="<?= base_url(); ?>dist/assets/images/banners/top-menu-banner.jpg" alt=""> </div>
 														<!-- /.yamm-content -->
 													</div>
 												</div>
 											</li>
 										</ul>
 									</li>
-									<li class="dropdown mega-menu">
-										<a href="category.html" data-hover="dropdown" class="dropdown-toggle" data-toggle="dropdown">الکترونیک <span class="menu-label hot-menu hidden-xs">حراج</span> </a>
-										<ul class="dropdown-menu container">
-											<li>
-												<div class="yamm-content">
-													<div class="row">
-														<div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-															<h2 class="title">عنوان دسته بندی</h2>
-															<ul class="links">
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-															</ul>
-														</div>
-														<!-- /.col -->
-
-														<div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-															<h2 class="title">عنوان دسته بندی</h2>
-															<ul class="links">
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-															</ul>
-														</div>
-														<!-- /.col -->
-
-														<div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-															<h2 class="title">عنوان دسته بندی</h2>
-															<ul class="links">
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-															</ul>
-														</div>
-														<!-- /.col -->
-														<div class="col-xs-12 col-sm-12 col-md-2 col-menu">
-															<h2 class="title">عنوان دسته بندی</h2>
-															<ul class="links">
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-																<li><a href="#">عنوان دسته بندی</a></li>
-															</ul>
-														</div>
-														<div class="col-xs-12 col-sm-12 col-md-4 col-menu custom-banner"> <a href="#"><img alt="" src="assets/images/banners/top-menu-banner1.jpg"></a> </div>
-													</div>
-													<!-- /.row -->
-												</div>
-												<!-- /.yamm-content -->
-											</li>
-										</ul>
-									</li>
-									<li class="dropdown hidden-sm"> <a href="category.html">بهداشتی و آرایشی <span class="menu-label new-menu hidden-xs">جدید</span> </a> </li>
-									<li class="dropdown hidden-sm"> <a href="category.html">ساعت</a> </li>
-									<li class="dropdown"> <a href="contact.html">جواهرات</a> </li>
-									<li class="dropdown"> <a href="contact.html">کفش</a> </li>
-									<li class="dropdown"> <a href="contact.html">لباس بچگانه</a> </li>
-									<li class="dropdown"> <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">صفحات</a>
-										<ul class="dropdown-menu pages">
-											<li>
-												<div class="yamm-content">
-													<div class="row">
-														<div class="col-xs-12 col-menu">
-															<ul class="links">
-																<li><a href="home.html">صفحه اصلی</a></li>
-																<li><a href="category.html">دسته بندیها</a></li>
-																<li><a href="detail.html">جزئیات</a></li>
-																<li><a href="shopping-cart.html">سبد خرید</a></li>
-																<li><a href="checkout.html">صورتحساب</a></li>
-																<li><a href="blog.html">وبلاگ</a></li>
-																<li><a href="blog-details.html">نوشته وبلاگ</a></li>
-																<li><a href="contact.html">ارتباط با ما</a></li>
-																<li><a href="sign-in.html">ورود کاربران</a></li>
-																<li><a href="my-wishlist.html">علاقه مندیها</a></li>
-																<li><a href="terms-conditions.html">شرایط و ضوابط</a></li>
-																<li><a href="track-orders.html">رهگیری سفارشات</a></li>
-																<li><a href="product-comparison.html">مقایسه محصول</a></li>
-																<li><a href="faq.html">پرسش های متداول</a></li>
-																<li><a href="404.html">صفحه خطا</a></li>
-															</ul>
-														</div>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</li>
+								
+									<li class="dropdown hidden-sm"> <a href="category.html">تخفیفات و پیشنهادات <span class="menu-label new-menu hidden-xs">جدید</span> </a> </li>
+									<li class="dropdown hidden-sm"> <a href="category.html">تماس با ما</a> </li>
+									<li class="dropdown"> <a href="contact.html">درباره ما</a> </li>
+	
+								
 								</ul>
 								<!-- /.navbar-nav -->
 								<div class="clearfix"></div>

@@ -4,25 +4,30 @@ class Scraper_helper {
 
 	
 
-	public static function Scraper_price($dkp,$selector)
+	public static function Scraper_price($dkp,$selector,$field,$table,$where)
 	{
-
+		$CI =& get_instance();
 		$target_url = "https://www.digikala.com/product/".$dkp;
 		$html = new simple_html_dom();
 		$html->load_file($target_url);    
-		
 		$var = $html->find($selector,0);
-
 		if(isset($var)) {
 			foreach($html->find($selector) as $result)
 			{
-				
-
-				echo $result->innertext .  ' تومان';
 			
+				$data = array(
+					$field => $result->innertext . '<spna style="font-size:11px;">تومان</span>',
+					'date' => date('Y-m-d H:i:s')
+				);
+		
+				$CI->MY_Model->update($table,$where,$dkp,$data);
 			}
 		} else{
-			echo "ناموجود";
+			$data = array(
+				$field => 'ناموجود'
+			);
+	
+			$CI->MY_Model->update($table,$where,$dkp,$data);
 		}
 	
 	}

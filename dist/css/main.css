@@ -1968,7 +1968,7 @@ header {
 }
 
 .yamm .dropdown-menu .yamm-content .links li a {
-    padding: 6px 0px;
+    padding: 2px 0px;
     font-size: 14px;
     color: #565656;
 }
@@ -1977,7 +1977,8 @@ header {
     font-size: 16px;
     color: #555;
     margin-top: 0px;
-    font-weight: 600
+    font-weight: 600;
+    margin-bottom:17px;
 }
 
 .yamm .dropdown-menu li {
@@ -1990,7 +1991,7 @@ header {
 }
 
 .yamm .dropdown-menu li a {
-    color: #3D3D3D;
+    color: #181717;
     line-height: normal;
     text-transform: none;
     display: block;
@@ -2129,7 +2130,7 @@ header {
 
 .sidebar .side-menu nav .nav>li>a:after {
     color: #bababa;
-    content: "\f104";
+    /* content: "\f104"; */
     float: left;
     font-size: 12px;
     height: 20px;
@@ -7861,7 +7862,7 @@ header {
         margin-bottom: 10px;
     }
     .single-product .product-info-block .name {
-        font-size: 35px;
+        font-size: 21px;
     }
     .category-carousel .item .caption .big-text {
         font-size: 40px;

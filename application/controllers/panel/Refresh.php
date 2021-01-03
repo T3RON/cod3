@@ -36,7 +36,7 @@ class Refresh extends CI_Controller {
         foreach($products as $products_value) { 
 
             $dkp = $products_value->products_code;
-            Scraper_helper::Scraper_site($dkp,$products_price,'products_price','products','products_code');
+            Scraper_helper::Scraper_price($dkp,$products_price,'products_price','products','products_code');
             echo $products_value->products_title . "    [Updated]"."<br>";
         }
 

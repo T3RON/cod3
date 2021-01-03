@@ -20,7 +20,7 @@ class Detail extends CI_Controller {
     function index()
     {
 
-
+        $output['cate'] = $this->MY_Model->get_categories();
         $products_id = $this->uri->segment(3);
         $output['products'] = $this->MY_Model->select_single('products',$products_id);
 

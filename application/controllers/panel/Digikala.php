@@ -24,7 +24,7 @@ class Digikala extends CI_Controller {
     function index()
     {
 
-        $output['products'] = $this->MY_Model->select('products');
+        $output['products'] = $this->MY_Model->select_limit_orderby('products',7,'date','DESC');
         $output['sub_cate'] = $this->MY_Model->select('sub_cate');
         $output['cate'] = $this->MY_Model->select('cate');
 
@@ -50,7 +50,7 @@ class Digikala extends CI_Controller {
 
 
 
-        $dkp = $this->input->post('products_code');
+        $dkp = "dkp-".$this->input->post('products_code');
         $tag = "digikala";
         // $tag = $this->input->post('products_tag');
         $url = 'https://www.digikala.com/product/'.$dkp;
@@ -78,7 +78,7 @@ class Digikala extends CI_Controller {
         Scraper_helper::Scraper_site($dkp,$products_guaranteed,'products_guaranteed','products','products_code');
         Scraper_helper::Scraper_site($dkp,$products_rating,'products_rating','products','products_code');
         Scraper_helper::Scraper_site($dkp,$products_params,'products_params','products','products_code');
-        Scraper_helper::Scraper_site($dkp,$products_price,'products_price','products','products_code');
+        Scraper_helper::Scraper_price($dkp,$products_price,'products_price','products','products_code');
         
 
         if ($result) {

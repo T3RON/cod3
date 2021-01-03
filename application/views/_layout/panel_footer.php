@@ -35,15 +35,15 @@
 
 <!-- Javascript -->
 <!-- Vendors -->
-<script src="<?=base_url('')?>assets/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
 <script src="<?=base_url('')?>assets/vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/jquery-scrollLock/jquery-scrollLock.min.js"></script>
 <!-- Vendors: Data tables -->
-<script src="<?=base_url('')?>assets/vendors/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
-<script src="<?=base_url('')?>assets/vendors/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js">
-</script>
+
 <script src="<?=base_url('')?>assets/vendors/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/jszip/dist/jszip.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
@@ -73,9 +73,16 @@
 
 
 <script>
+
+
+
 $(document).ready(function() {
-    $('#data-table').DataTable();
-});
+    $('#data-table').DataTable( {
+        "paging":   ture,
+        "ordering": ture,
+        "info":     ture
+    } );
+} );
 </script>
 
 </body>

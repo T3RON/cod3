@@ -427,12 +427,13 @@
                                         <div class="col-lg-12">
                                             <div class="pull-right">
                                                 <div class="stock-box">
-                                                    <span class="label">موجودیت :</span>
+                                                    <span class="label"></span>
                                                 </div>
                                             </div>
                                             <div class="pull-right">
                                                 <div class="stock-box">
-                                                    <span class="value">موجود در انبار</span>
+                                                    <span class="value">                                        <?= $products_value->products_guaranteed; ?>
+</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -450,16 +451,13 @@
                                     <div class="row">
 
 
-                                        <div class="col-sm-6 col-xs-6">
+                                        <div class="col-sm-12 col-xs-12">
                                             <div class="price-box">
-                                                <span class="price"><?= $products_value->products_price; ?> تومان</span>
+                                                <span class="price"><?= $products_value->products_price; ?> </span>
                                             </div>
                                         </div>
 
-                                        <div style="font-size: 16px;line-height: 30px;" class="col-sm-6 col-xs-6">
-                                        <?= $products_value->products_guaranteed; ?>
-                                        
-                                        </div>
+                                
 
                                     </div>
                                     <!-- /.row -->
@@ -495,7 +493,7 @@
                             <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12">
                                     <div class="add-btn">
                                             <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
-                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?= $products_value->products_price; ?> تومان</a>
+                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?= $products_value->products_price; ?> </a>
                                         </div>      
                             </div>
                                  
@@ -512,7 +510,7 @@
                             <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12">
                                     <div class="add-btn">
                                             <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
-                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?= $products_value->products_price; ?> تومان</a>
+                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?= $products_value->products_price; ?> </a>
                                         </div>      
                             </div>
                                  
@@ -529,7 +527,7 @@
                             <div class="col-xl-6 col-md-6 col-xs-12 col-sm-12">
                                     <div class="add-btn">
                                             <a href="<?= $products_value->products_url; ?>" class="btn btn-primary"><i
-                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?= $products_value->products_price; ?> تومان</a>
+                                                    class="fa fa-shopping-cart inner-right-vs"></i> <?= $products_value->products_price; ?> </a>
                                         </div>      
                             </div>
                                  
@@ -555,13 +553,11 @@
                         <div class="col-sm-12 col-md-9 col-lg-9">
 
                             <div class="tab-content">
-                            <?php if(is_null($products_value->products_content)) { ?>
                                 <div id="description" class="tab-pane in active">
                                     <div class="product-tab">
                                         <div class="text"><?= $products_value->products_content; ?></div>
                                     </div>
                                 </div>
-                                <?php } ?>
                                 <!-- /.tab-pane -->
 
                                 <div id="review" class="tab-pane">
