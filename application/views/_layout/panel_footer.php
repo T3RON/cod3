@@ -35,9 +35,7 @@
 
 <!-- Javascript -->
 <!-- Vendors -->
-<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-
+<script src="<?=base_url('')?>assets/js/jquery-3.5.1.min"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
@@ -48,7 +46,6 @@
 <script src="<?=base_url('')?>assets/vendors/bower_components/jszip/dist/jszip.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/autosize/dist/autosize.min.js"></script>
-<script src="cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/trumbowyg/dist/trumbowyg.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/dropzone/dist/min/dropzone.min.js"></script>
@@ -56,6 +53,7 @@
 <script src="<?=base_url('')?>assets/libs/bootstrap-duallistbox/dist/jquery.bootstrap-duallistbox.min.js"></script>
 <script src="<?=base_url('')?>assets/libs/select2/dist/js/select2.full.min.js"></script>
 
+<script src="<?=base_url('')?>assets/vendors/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 
 <script src="<?=base_url('')?>assets/vendors/bower_components/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/moment/min/moment.min.js"></script>

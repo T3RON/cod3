@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?=base_url('')?>assets/vendors/bower_components/animate.css/animate.min.css">
     <link rel="stylesheet"
         href="<?=base_url('')?>assets/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
-    <link rel="stylesheet" href="cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="<?=base_url('')?>assets//libs/datatables/media/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="<?=base_url('')?>assets/vendors/bower_components/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="<?=base_url('')?>assets/libs/select2/dist/css/select2.min.css">
     <link rel="stylesheet" href="<?=base_url('')?>assets/vendors/bower_components/trumbowyg/dist/ui/trumbowyg.min.css">

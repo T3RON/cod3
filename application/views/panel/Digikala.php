@@ -66,44 +66,293 @@
 
 <section class="content">
       <header class="content__title">
-        <h1>لیست محصولات</h1>
+        <h1>دیتا تیبل</h1>
 
         <div class="actions">
           <a href="default.htm" class="actions__item zmdi zmdi-trending-up"></a>
           <a href="default.htm" class="actions__item zmdi zmdi-check-all"></a>
 
-          <div class="dropdown actions__item">
-            <i data-toggle="dropdown" class="zmdi zmdi-more-vert"></i>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a href="default.htm" class="dropdown-item">تازه سازی</a>
-              <a href="default.htm" class="dropdown-item">مدیریت ویجت ها</a>
-              <a href="default.htm" class="dropdown-item">تنظیمات</a>
-            </div>
-          </div>
+    
         </div>
       </header>
 
       <div class="card">
         <div class="card-body">
-          <h6 class="card-subtitle"></h6>
-  
           <div class="table-responsive">
             <table id="data-table" class="table">
+              <thead>
+                <tr>
+                  <th>نام</th>
+                  <th>یمت</th>
+                  <th>اداره</th>
+                  <th>سن</th>
+                  <th>تاریخ شروع</th>
+                  <th>حقوق</th>
+                </tr>
+              </thead>
               <tbody>
-              <?php foreach($products as $products_value) { ?>
               <tr>
-                <td><?= $products_value->products_code; ?></td>
-                <td><?= $products_value->products_title; ?><td>
-                <td><?= $products_value->products_price; ?> تومان<td>
-                <td><a href="<?= base_url('panel/Digikala/delete'); ?>/<?= $products_value->products_id; ?>" class="btn btn-danger">حذف</button><td>
-              </tr>  
-                <?php } ?>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>  <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>  <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>  <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>  <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>  <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>  <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>  <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>  <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>   <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>   <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>   <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>   <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+              <tr>
+                <td>علی احمدی</td>
+
+                <td>توسعه دهنده وب</td>
+                <td>تهران</td>
+                <td>53</td>
+                <td>1394/10/22</td>
+                <td>$114,500</td>
+              </tr>
+                <tr>
+                  <td>علی احمدی</td>
+
+                  <td>Regional Marketing</td>
+                  <td>Tokyo</td>
+                  <td>20</td>
+                  <td>2011/08/14</td>
+                  <td>$163,000</td>
+                </tr>
+                <tr>
+                  <td>علی احمدی</td>
+
+                  <td>Integration Specialist</td>
+                  <td>Sidney</td>
+                  <td>37</td>
+                  <td>2011/06/02</td>
+                  <td>$95,400</td>
+                </tr>
+                <tr>
+                  <td>علی احمدی</td>
+
+                  <td>توسعه دهنده وب</td>
+                  <td>تهران</td>
+                  <td>53</td>
+                  <td>1394/10/22</td>
+                  <td>$114,500</td>
+                </tr>
+                <tr>
+                  <td>علی احمدی</td>
+
+                  <td>توسعه دهنده وب</td>
+                  <td>تهران</td>
+                  <td>53</td>
+                  <td>1394/10/22</td>
+                  <td>$114,500</td>
+                </tr>
+
               </tbody>
             </table>
           </div>
         </div>
       </div>
 
+      <footer class="footer hidden-xs-down">
+        <p>© Super Admin Responsive. All rights reserved.</p>
+
+        <ul class="nav footer__nav">
+          <a class="nav-link" href="default.htm">صفحه اصلی</a>
+
+          <a class="nav-link" href="default.htm">شرکت</a>
+
+          <a class="nav-link" href="default.htm">پشتیبانی</a>
+
+          <a class="nav-link" href="default.htm">خبر</a>
+
+          <a class="nav-link" href="default.htm">ارتباط با ما</a>
+        </ul>
+      </footer>
     </section>
 </main>
 
