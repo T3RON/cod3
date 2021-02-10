@@ -35,7 +35,7 @@
 
 <!-- Javascript -->
 <!-- Vendors -->
-<script src="<?=base_url('')?>assets/js/jquery-3.5.1.min"></script>
+<script src="<?=base_url('')?>assets/vendors/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
@@ -49,7 +49,7 @@
 <script src="<?=base_url('')?>assets/vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/trumbowyg/dist/trumbowyg.min.js"></script>
 <script src="<?=base_url('')?>assets/vendors/bower_components/dropzone/dist/min/dropzone.min.js"></script>
-<script src="<?=base_url('')?>assets/js/\pages/forms/select2/select2.init.js"></script>
+<script src="<?=base_url('')?>assets/js/pages/forms/select2/select2.init.js"></script>
 <script src="<?=base_url('')?>assets/libs/bootstrap-duallistbox/dist/jquery.bootstrap-duallistbox.min.js"></script>
 <script src="<?=base_url('')?>assets/libs/select2/dist/js/select2.full.min.js"></script>
 
@@ -70,18 +70,6 @@
 <script src="<?=base_url('')?>assets/js/app.min.js"></script>
 
 
-<script>
-
-
-
-$(document).ready(function() {
-    $('#data-table').DataTable( {
-        "paging":   ture,
-        "ordering": ture,
-        "info":     ture
-    } );
-} );
-</script>
 
 </body>
 
