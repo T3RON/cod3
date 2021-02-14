@@ -24,7 +24,7 @@ class Digikala extends CI_Controller {
     function index()
     {
 
-        $output['products'] = $this->MY_Model->select_limit_orderby('products',7,'date','DESC');
+        $output['products'] = $this->MY_Model->join_two_One_OrderBy('products','cate','sub_cate','products.date','DESC');
         $output['sub_cate'] = $this->MY_Model->select('sub_cate');
         $output['cate'] = $this->MY_Model->select('cate');
 
@@ -51,6 +51,9 @@ class Digikala extends CI_Controller {
 
 
         $dkp = "dkp-".$this->input->post('products_code');
+        $cate_id = $this->input->post('cate_id');
+        $sub_cate_id = $this->input->post('sub_cate_id');
+
         $tag = "digikala";
         // $tag = $this->input->post('products_tag');
         $url = 'https://www.digikala.com/product/'.$dkp;
@@ -59,10 +62,18 @@ class Digikala extends CI_Controller {
 		//Scraper_helper::download_page($dkp,$tag,$url);
 		$data = array(
 			'products_code' => $dkp,
-			'products_tag' => $tag,
+            'products_tag' => $tag,
+            'cate_id' => $cate_id,
+            'sub_cate_id' => $sub_cate_id,
 			'products_url' => $products_url
-		);
-		$result= $this->MY_Model->insert('products',$data);
+        );
+
+        if($this->MY_Model->digikala_product_code_exists($dkp)) {
+            redirect("panel/Index");
+        }else {
+            $result= $this->MY_Model->insert('products',$data);
+
+        }
 
 
 

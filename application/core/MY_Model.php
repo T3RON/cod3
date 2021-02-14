@@ -114,6 +114,16 @@ class MY_Model extends CI_Model {
         return $query->result();
     }
 
+    function join_two_One_OrderBy($table,$table_one,$table_two,$field_order_by_one,$type_order_by_one) {
+		$this->db->select('*');
+		$this->db->from($table);
+		$this->db->join($table_one, $table.'.'.$table_one.'_id = '.$table_one.'.'.$table_one.'_id');
+		$this->db->join($table_two, $table.'.'.$table_two.'_id = '.$table_two.'.'.$table_two.'_id');
+		$this->db->order_by($field_order_by_one,$type_order_by_one);
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	function join_two_withOrderBy($table,$table_one,$table_two,$field_order_by_one,$type_order_by_one,$field_order_by_two,$type_order_by_two) {
 		$this->db->select('*');
 		$this->db->from($table);
@@ -394,7 +404,17 @@ class MY_Model extends CI_Model {
 
 
 
-
+    function digikala_product_code_exists($code)
+    {
+        $this->db->where('products_code',$code);
+        $query = $this->db->get('products');
+        if ($query->num_rows() > 0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
 
 
